@@ -1,0 +1,34 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        //здесь прописан путь к Java-классу
+        <servlet-name>MyFirstServlet</servlet-name>
+        <servlet-class>com.chemisov.servlets.MyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        //здесь прописан путь к ресурсу из адресной строки
+        <servlet-name>MyFirstServlet</servlet-name>
+        <url-pattern>/Service</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        //здесь прописан путь к Java-классу
+        <servlet-name>MySecondServlet</servlet-name>
+        <servlet-class>com.chemisov.servlets.MyServlet1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        //здесь прописан путь к ресурсу из адресной строки
+        <servlet-name>MySecondServlet</servlet-name>
+        <url-pattern>/Service1</url-pattern>
+    </servlet-mapping>
+
+
+    <build>
+        <finalName>My Application</finalName>
+    </build>
+
+</web-app>
