@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+
+
 public class MyServlet extends HttpServlet {
 
     @Override
@@ -17,7 +19,7 @@ public class MyServlet extends HttpServlet {
 
         // Actual logic goes here.
         PrintWriter out = response.getWriter();
-        out.println("GET S KARTOSH");
+        out.println("GET Servise");
     }
 
     @Override
@@ -30,7 +32,7 @@ public class MyServlet extends HttpServlet {
 
         // Actual logic goes here.
         PrintWriter out = response.getWriter();
-        out.println("POST S KARTOSH");
+        out.println("POST Service");
     }
 
     @Override
@@ -43,7 +45,7 @@ public class MyServlet extends HttpServlet {
 
         // Actual logic goes here.
         PrintWriter out = response.getWriter();
-        out.println("PUT S KARTOSH");
+        out.println("PUT Servise");
     }
 
     @Override
@@ -56,7 +58,7 @@ public class MyServlet extends HttpServlet {
 
         // Actual logic goes here.
         PrintWriter out = response.getWriter();
-        out.println("DELETE S KARTOSH");
+        out.println("DELETE Service");
     }
 
 }
